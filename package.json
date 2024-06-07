@@ -2,9 +2,9 @@
   "name": "app-service",
   "version": "1.0.0",
   "description": "My Express application with SQLite",
-  "main": "app.js",
+  "main": "backend.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node backend.js"
   },
   "dependencies": {
     "express": "^4.17.1",
