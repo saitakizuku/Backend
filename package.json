@@ -1,58 +1,17 @@
 {
-  "name": "y-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/cors": "^2.8.17",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.97",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "axios": "^1.7.2",
-    "bootstrap": "^5.3.3",
-    "cookie-parser": "^1.4.6",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "react": "^18.3.1",
-    "react-bootstrap": "^2.10.2",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^6.23.1",
-    "react-scripts": "^5.0.1",
-    "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
+  "name": "app-service",
+  "version": "1.0.0",
+  "description": "My Express application with SQLite",
+  "main": "app.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "create-tables": "ts-node src/database/tableCreate.ts"
+    "start": "node app.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@types/sqlite3": "^3.1.11"
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.0",
+    "cors": "^2.8.5",
+    "cookie-parser": "^1.4.5",
+    "uuid": "^8.3.2"
   }
 }
+
